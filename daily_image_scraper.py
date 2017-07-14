@@ -23,7 +23,7 @@ def getDailyImage(imageUrl):
             fo.write(chunk)
 
 
-    os.system("/usr/bin/gsettings set org.gnome.desktop.background picture-uri file:/home/shaun/python/webscraping/background.jpg")
+    os.system("/usr/bin/gsettings set org.gnome.desktop.background picture-uri file:/home/shaun/python/webscraping/daily_image_scraper/background.jpg")
 
 
 

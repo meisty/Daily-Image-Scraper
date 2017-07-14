@@ -1,0 +1,6 @@
+Daily image scraper
+
+This is a web scraper which goes onto the NASA image of the day website and scrapes the latest 
+image present.  It then downloads the image and sets it as your desktop background (currently configured for unix based systems).  
+
+Improvements to follow. 
