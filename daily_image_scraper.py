@@ -26,11 +26,6 @@ def getDailyImage(imageUrl):
 
     os.system("/usr/bin/gsettings set org.gnome.desktop.background picture-uri file:/home/shaun/python/webscraping/daily_image_scraper/background.jpg")
 
-
-
-
-
-
 result = getDailyImage('https://apod.nasa.gov/apod/')
 if result == False:
     print("Image failed to download")
