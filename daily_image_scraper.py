@@ -9,6 +9,7 @@ def getDailyImage(imageUrl):
     imageElem = soup.select('html body center p a img')
     if imageElem == []:
         print("Could not find the image")
+        return False
     else:
         imgUrl = imageElem[0].get('src')
         imgUrl = url+imgUrl
@@ -30,5 +31,8 @@ def getDailyImage(imageUrl):
 
 
 
-getDailyImage('https://apod.nasa.gov/apod/')
-print("Your image has been downloaded and has been set as your desktop background")
+result = getDailyImage('https://apod.nasa.gov/apod/')
+if result == False:
+    print("Image failed to download")
+else:
+    print("Your image has been downloaded and has been set as your desktop background")
